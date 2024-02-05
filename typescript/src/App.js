@@ -1,20 +1,13 @@
-import { Button } from "./EventProps/Button";
-import { Input } from "./EventProps/Input";
-
-
+import { Toast } from "./TemplateLiteralsandExclude/Toast.tsx";
 function App() {
-
+  
   return (
     <div className="App">
-      <Button handleClick={(event, id) => {
-        console.log('Button clicked', event, id)
-      }} />
-      <Input value='' handleChange={(event) => console.log(event)} />
+     <Toast position="center-center" />
+  </div>
+    
 
-
-
-    </div>
-  );
+  )
 }
 
 export default App;
